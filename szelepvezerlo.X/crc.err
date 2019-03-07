@@ -1,0 +1,25 @@
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 61 : symbol 'CRCDAT' has not been defined
+Error[1101] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 61 : lvalue required
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 63 : symbol 'CRCCON' has not been defined
+Error[1101] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 63 : lvalue required
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 64 : symbol 'CRCXOR' has not been defined
+Error[1101] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 64 : lvalue required
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 65 : symbol 'CRCWDAT' has not been defined
+Error[1101] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 65 : lvalue required
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 72 : symbol 'CRCCONbits' has not been defined
+Error[1151] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 72 : struct or union object designator expected
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 74 : symbol 'CRCCONbits' has not been defined
+Error[1151] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 74 : struct or union object designator expected
+Error[1101] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 74 : lvalue required
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 75 : symbol 'CRCCONbits' has not been defined
+Error[1151] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 75 : struct or union object designator expected
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 76 : symbol 'CRCCONbits' has not been defined
+Error[1151] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 76 : struct or union object designator expected
+Error[1101] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 76 : lvalue required
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 80 : symbol 'CRCCONbits' has not been defined
+Error[1151] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 80 : struct or union object designator expected
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 81 : symbol 'CRCCONbits' has not been defined
+Error[1151] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 81 : struct or union object designator expected
+Error[1101] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 81 : lvalue required
+Error[1105] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 83 : symbol 'CRCDAT' has not been defined
+Error[1101] C:\edocs\uC\ujprojects\szelepvezerlo\src\crc.c 83 : lvalue required

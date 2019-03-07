@@ -1,0 +1,153 @@
+if (PIR1bits.RCIF) {
+    switch (aaa = RCREG) {
+        case '+':
+            CAN_PCconn();
+            break;
+        case 't':
+            flag.dir = !(flag.dir);
+            ConsolePutROMString("toggle\r\n");
+            break;
+        case 'Y':
+            _time.yr += 1;
+            break;
+        case 'y':
+            _time.yr -= 1;
+            break;
+        case 'M':
+            _time.mth += 1;
+            break;
+        case 'm':
+            _time.mth -= 1;
+            break;
+        case 'D':
+            _time.day += 1;
+            break;
+        case 'd':
+            _time.day -= 1;
+            break;
+        case 'H':
+            _time.hr += 1;
+            break;
+        case 'h':
+            _time.hr -= 1;
+            break;
+        case 'P':
+            _time.min += 1;
+            break;
+        case 'p':
+            _time.min -= 1;
+            break;
+        case 'S':
+            _time.sec += 1;
+            break;
+        case 's':
+            _time.sec -= 1;
+            break;
+        case 'g':
+            if (step) step = 0;
+            else step = 65000; //10240;
+            break;
+        case '1':
+            A0 = 0;
+            A1 = 0;
+            A2 = 0;
+            ConsolePutROMString("egyes\r\n");
+            break;
+        case '2':
+            A0 = 1;
+            A1 = 0;
+            A2 = 0;
+            ConsolePutROMString("kettes\r\n");
+            break;
+        case '3':
+            A0 = 0;
+            A1 = 1;
+            A2 = 0;
+            ConsolePutROMString("harmas\r\n");
+            break;
+        case '4':
+            A0 = 1;
+            A1 = 1;
+            A2 = 0;
+            ConsolePutROMString("negyes\r\n");
+            break;
+        case '5':
+            A0 = 0;
+            A1 = 0;
+            A2 = 1;
+            ConsolePutROMString("otos\r\n");
+            break;
+        case '6':
+            A0 = 1;
+            A1 = 0;
+            A2 = 1;
+            ConsolePutROMString("hatos\r\n");
+            break;
+        case 'z':
+            ZeroRun();
+            break;
+
+
+
+
+
+
+
+
+
+
+
+Command: X,seg#,data <CR>
+Sets the distance to be travelled for the specified
+motion profile segment. Data is provided in encoder
+counts relative to the present position.
+0 ? seg# ? 23
+-32768 ? data ? 32767
+
+
+Command: A,seg#,data <CR>
+Sets the acceleration for the specified motion profile
+segment. Data is provided in encoder
+counts/TSERVO
+2/65536.
+0 ? seg# ? 23
+1 ? data ? 32767
+
+Command: V,seg#,data <CR>
+Sets the velocity limit for the specified motion profile
+segment. Data is provided in encoder
+counts/TSERVO/256.
+0 ? seg# ? 23
+1 ? data ? 32767
+
+Command: T,seg#,data <CR>
+Specifies the amount of time to wait before executing
+the next motion profile segment. Data is provided in
+TSERVO multiples.
+0 ? seg# ? 23
+0 ? data ? 32767
+
+Command: G,startseg,stopseg <CR>
+Executes a range of motion profile segments.
+0 ? startseg ? 23
+0 ? stopseg ? 23
+
+Command: S <CR>
+Stops execution of a motion profile.
+
+Command: P,data <CR>
+Changes the proportional gain for the PID algorithm.
+-32768 ? data ? 32767
+
+Command: I,data <CR>
+Changes the integral gain for the PID algorithm.
+-32768 ? data ? 32767
+
+Command: D,data <CR>
+Changes the differential gain for the PID algorithm.
+-32768 ? data ? 32767
+
+Command: W <CR>
+Enables or disables the PWM driver stage.
+
+
